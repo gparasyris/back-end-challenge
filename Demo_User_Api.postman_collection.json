@@ -1,0 +1,243 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Demo User Api",
+		"_postman_id": "d9d6250c-4c68-2751-36df-15dd537ef003",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"description": "",
+			"item": [
+				{
+					"name": "Retrieve All Users",
+					"request": {
+						"url": "http://{{url}}/user",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Name",
+									"value": "moutro",
+									"type": "text"
+								},
+								{
+									"key": "Race",
+									"value": "pekinoua",
+									"type": "text"
+								},
+								{
+									"key": "Color",
+									"value": "black",
+									"type": "text"
+								},
+								{
+									"key": "Email",
+									"value": "test@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "Flogin",
+									"value": "test",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "Ilogin",
+									"value": "test",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"url": "http://{{url}}/user",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "firstName",
+									"value": "John",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Doe",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "Crete",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "john@doe.com",
+									"type": "text"
+								},
+								{
+									"key": "facebookId",
+									"value": "johndoe",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Specific User",
+					"request": {
+						"url": "http://{{url}}/user/{{userId}}",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Name",
+									"value": "moutro",
+									"type": "text"
+								},
+								{
+									"key": "Race",
+									"value": "pekinoua",
+									"type": "text"
+								},
+								{
+									"key": "Color",
+									"value": "black",
+									"type": "text"
+								},
+								{
+									"key": "Email",
+									"value": "test@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "Flogin",
+									"value": "test",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "Ilogin",
+									"value": "test",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"url": "http://{{url}}/user/{{userId}}",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "firstName",
+									"value": "John",
+									"type": "text",
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "lastName",
+									"value": "Doe",
+									"type": "text",
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "location",
+									"value": "Crete",
+									"type": "text",
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "john@doe.com",
+									"type": "text",
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "facebookId",
+									"value": "johndoe2",
+									"type": "text",
+									"description": ""
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete USer",
+					"request": {
+						"url": "http://{{url}}/user/{{userId}}",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

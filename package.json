@@ -1,0 +1,16 @@
+{
+  "version": "0.0.1",
+  "name": "node-api",
+  "main": "server.js",
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "express": "~4.1.1",
+    "mongoose": "~4.7.6"
+  }
+}
