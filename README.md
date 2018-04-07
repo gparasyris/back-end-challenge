@@ -14,7 +14,7 @@ var UserSchema   = new Schema({
 
 ```
 
-### How to use###
+### How to use ###
 1. `mongod`, verify that mongod is running.
 2. `npm i`, install the node_modules needed for the server to run.
 3. `node server.js`, deploy the server (port 8008 is default, in case env is missing).
